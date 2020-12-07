@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "iLaD",
+  "name": "iLaD's portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://i.imgur.com/jvYjBZL_d.webp?maxwidth=728&fidelity=grand",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://i.imgur.com/jvYjBZL_d.webp?maxwidth=728&fidelity=grand",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://i.imgur.com/jvYjBZL_d.webp?maxwidth=728&fidelity=grand",
       "type": "image/png",
       "sizes": "512x512"
     }

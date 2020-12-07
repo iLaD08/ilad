@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
+  --scrollbarBG: #000000;
+  --thumbBG: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 12px;
+  border: 4px solid var(--scrollbarBG);
+}
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000000;
+    border: 2px #000000 solid;
+    transition: all 0.4s ease-in-out;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+button:hover {
+    background-color: transparent;
+    color: black;
+}   
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-frame {
+  display: block;
+  margin: 20px auto;
 }
