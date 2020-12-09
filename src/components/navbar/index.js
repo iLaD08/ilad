@@ -2,7 +2,7 @@ import React from "react";
 import { NavbarDiv, NavbarA, NavbarLi, NavbarLogo } from "./style"
 
 const Navbar = () => (
-    <NavbarDiv>
+    <NavbarDiv id="home">
          <NavbarLogo src="https://i.imgur.com/bsceKNV_d.webp?maxwidth=728&fidelity=grand" alt="Home" title="Home" />
         <ul>
             <NavbarLi><NavbarA href="#home">Home</NavbarA></NavbarLi>

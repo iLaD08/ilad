@@ -7,9 +7,9 @@ const Projects = () => {
         { name: "ilad", description:"My personal website.", link:"https://github.com/iLaD08/ilad" },
         { name: "todo-app", description:"Todo App template by iLaD", link:"https://github.com/iLaD08/todo-app" },
         { name: "D&L mode", description:"A dark and light mode template.", link:"https://github.com/iLaD08/dark-and-light-mode" },
+        { name: "Monster Rolodex", description:"My first React app", link:"https://monsters-rolodex.ilad08.now.sh/" },
         { name: "Radio bot", description:"A Discord radio bot template.", link:"https://github.com/iLaD08/discord-radio-bot" },
-        { name: "", description:"", link:"" },
-        { name: "", description:"", link:"" },
+        { name: "", description:"", link:"" }
     ]);
 
     return (
