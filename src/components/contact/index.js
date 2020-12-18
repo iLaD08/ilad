@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactContainer, ContactTitle, ContactTitleUnderline, ContactFrameDiv, ContactFrame  } from "./style";
+import { ContactContainer, ContactTitle, ContactTitleUnderline, ContactFrameDiv } from "./style";
 
 const Projects = () => (
     <ContactContainer id="contacts">
