@@ -5,12 +5,37 @@ const Navbar = () => (
     <NavbarDiv id="home">
          <NavbarLogo src="https://i.imgur.com/bsceKNV_d.webp?maxwidth=728&fidelity=grand" alt="Home" title="Home" />
         <ul>
-            <NavbarLi><NavbarA href="#home">Home</NavbarA></NavbarLi>
-            <NavbarLi><NavbarA href="#aboutme">About me</NavbarA></NavbarLi>
-            <NavbarLi><NavbarA href="#projects">Projects</NavbarA></NavbarLi>
-            <NavbarLi><NavbarA href="#contacts">Contact</NavbarA></NavbarLi>
+            <NavbarLi>
+                <NavbarA  to="/"
+                    exact
+                    activeStyle={{
+                        color: "#a8a8a8"
+                    }}>
+                    About
+                 </NavbarA>
+            </NavbarLi>
+            <NavbarLi>
+                <NavbarA  
+                   to="/projects"
+                   exact
+                   activeStyle={{
+                    color: "#a8a8a8"
+                }}>
+                    Projects
+                 </NavbarA>
+            </NavbarLi>
+            <NavbarLi>
+                <NavbarA  
+                   to="/contact"
+                   exact
+                   activeStyle={{
+                    color: "#a8a8a8"
+                }}>
+                    Contact
+                 </NavbarA>
+            </NavbarLi>
         </ul>
     </NavbarDiv>
-)
+);
 
 export default Navbar;

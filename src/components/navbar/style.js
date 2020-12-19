@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const NavbarDiv = styled.div`
     display: flex;
@@ -13,7 +14,7 @@ export const NavbarDiv = styled.div`
     background-color: #000000;
 `;
 
-export const NavbarA = styled.a`
+export const NavbarA = styled(NavLink)`
     font-size: 16px;
     color: #ffff;
     text-decoration: none;
@@ -23,11 +24,11 @@ export const NavbarA = styled.a`
     }
 `;
 
-export const NavbarLi = styled.a`
+export const NavbarLi = styled.li`
     display: inline-block;
-    padding: 0px 20px;
+    padding: 10px 30px;
     transition: all 0.3s ease 0.1s;
-`
+`;
 
 export const NavbarLogo = styled.img`
     cursor: pointer;

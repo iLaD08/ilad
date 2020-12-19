@@ -1,19 +1,20 @@
 import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./components/navbar/index";
-import About from "./components/about/index";
-import Skills from "./components/skills/index";
-import Projects from "./components/projects/index";
-import Contact from "./components/contact/index";
+import AboutPage from "./pages/about-page/index";
+import ProjectPage from "./pages/project-page/index";
+import ContactPage from "./pages/project-page/index";
 
 import './App.css';
 
 const App = () => (
   <div className="App">
     <Navbar/>
-    <About/>
-    <Skills/>
-    <Projects/>
-    <Contact/>
+    <Switch>
+        <Route exact path="/" component={AboutPage} />
+        <Route path="/projects" component={ProjectPage} />
+        <Route path="/contact" component={ContactPage} />
+    </Switch>
   </div>
 );
 
