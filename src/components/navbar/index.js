@@ -12,7 +12,7 @@ const Navbar = () => (
                     activeStyle={{
                         color: "#a8a8a8"
                     }}>
-                    About
+                    Home
                  </NavbarA>
             </NavbarLi>
             <NavbarLi>

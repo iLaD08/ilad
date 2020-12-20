@@ -65,3 +65,19 @@ button:hover {
   display: block;
   margin: 20px auto;
 }
+
+@media screen and (max-width: 600px) {
+  .error-content {
+    position: relative;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .error-text {
+    font-size: 60px;
+  }
+  .error-image {
+    display: none;
+  }
+}

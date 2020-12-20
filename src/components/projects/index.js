@@ -22,10 +22,10 @@ const Projects = () => {
             <ProjectsDiv>
                 {data.map((data, index) => (
                     <Project
-                     key={index}
-                     name={data.name}
-                     description={data.description}
-                     link={data.link}
+                      key={index}
+                      name={data.name}
+                      description={data.description}
+                      link={data.link}
                     />
                 ))}
             </ProjectsDiv>

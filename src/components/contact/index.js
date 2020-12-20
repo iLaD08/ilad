@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactContainer, ContactTitle, ContactTitleUnderline, ContactFrameDiv } from "./style";
 
-const Projects = () => (
+const Contact = () => (
     <ContactContainer id="contacts">
             <ContactTitle>Contact</ContactTitle>
                 <ContactTitleUnderline />
@@ -11,4 +11,4 @@ const Projects = () => (
         </ContactContainer>    
 );
 
-export default Projects;
+export default Contact;
