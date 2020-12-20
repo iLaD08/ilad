@@ -6,7 +6,8 @@ const Navbar = () => (
          <NavbarLogo src="https://i.imgur.com/bsceKNV_d.webp?maxwidth=728&fidelity=grand" alt="Home" title="Home" />
         <ul>
             <NavbarLi>
-                <NavbarA  to="/"
+                <NavbarA  
+                    to="/"
                     exact
                     activeStyle={{
                         color: "#a8a8a8"
@@ -17,7 +18,6 @@ const Navbar = () => (
             <NavbarLi>
                 <NavbarA  
                    to="/projects"
-                   exact
                    activeStyle={{
                     color: "#a8a8a8"
                 }}>
@@ -27,7 +27,6 @@ const Navbar = () => (
             <NavbarLi>
                 <NavbarA  
                    to="/contact"
-                   exact
                    activeStyle={{
                     color: "#a8a8a8"
                 }}>
