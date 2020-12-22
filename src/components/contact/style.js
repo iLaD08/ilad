@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
     position: relative;
-    top : 100px;
+    top : 80px;
 `;
 
 export const ContactTitle = styled.h1`

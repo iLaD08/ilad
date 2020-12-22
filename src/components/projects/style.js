@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-margin-top: 4%;
-margin-left: 4%;
-margin-bottom: 8%;
-margin-right: 4%;
+    position: relative;
+    top : 80px;
+    margin-left: 4%;
+    margin-right: 4%;
 `;
 
 
