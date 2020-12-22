@@ -1,3 +1,3 @@
 # ilad
 
-[Visit](https://ilad.vercel.app/)
+[Visit](https://ilad.now.sh/)
