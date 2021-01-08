@@ -5,12 +5,19 @@ export const SkillsContainer = styled.div`
     margin-left: 4%;
     margin-bottom: 8%;
     margin-right: 4%;
+    @media (max-width: 768px) {
+        position: relative;
+        top: 250px;
+    }
 `;
 
 export const SkillsDiv = styled.div`
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const SkillDiv = styled.div`

@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
     position: relative;
-    top : 80px;
+    top: 80px;
+    @media screen and (max-width: 768px) {
+      top: 120px;
+    }
 `;
 
 export const ContactTitle = styled.h1`
