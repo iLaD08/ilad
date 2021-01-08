@@ -12,6 +12,9 @@ export const NavbarDiv = styled.div`
     z-index: 1;
     padding: 4px;
     background-color: #000000;
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const NavbarA = styled(NavLink)`

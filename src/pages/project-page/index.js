@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../project/index";
+import Project from "../../components/project/index";
 import { ProjectsContainer, ProjectsDiv, ProjectsTitle, ProjectsTitleUnderline } from "./style";
 
 const ProjectPage = () => {
