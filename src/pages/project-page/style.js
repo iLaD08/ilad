@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
     position: relative;
-    top: 150px;
+    top: 80px;
     margin-left: 4%;
     margin-right: 4%;
 `;
