@@ -1,14 +1,68 @@
 import React from "react";
-import { ContactContainer, ContactTitle, ContactTitleUnderline, ContactFrameDiv } from "./style";
+import { ContactPageDivContainer, ContactPageInput, ContactPageMessage, MessageSentAlert } from "./style";
 
-const Contact = () => (
-    <ContactContainer id="contacts">
-            <ContactTitle>Contact</ContactTitle>
-                <ContactTitleUnderline />
-            <ContactFrameDiv>
-                <iframe class="contact-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdEWb95WvUVyq36gY6HSZZoSb8noSiEeCvG8utW7gyoKss_KQ/viewform?embedded=true" width="600" height="600" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
-            </ContactFrameDiv>
-        </ContactContainer>    
-);
+const Contact = () => {
+    const [username, setUsername] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [message, setMessage] = React.useState('');
+    const [messageSented, setMessageSented] = React.useState(false)
+
+    const submitRequest = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch("https://ilad-backend.glitch.me/smtp/sendmail", { 
+          method: 'POST', 
+          headers: { 
+              'Content-type': 'application/json'
+          }, 
+          body: JSON.stringify({username, email, message}) 
+      }).then(
+          () => {
+            setMessageSented(true)
+            setUsername('')
+            setEmail('');
+            setMessage('');
+          }
+      )
+};
+    
+
+    return (
+        <ContactPageDivContainer>
+             {messageSented == true ? (
+                <MessageSentAlert>✅ Message sent</MessageSentAlert>
+                ) : (
+                    <form onSubmit={submitRequest}>
+                    <div>
+                        <ContactPageInput 
+                            type="username"
+                            placeholder="Username"  
+                            value={username}
+                            onChange={e => setUsername(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <ContactPageInput 
+                            type="email"
+                            placeholder="Email"  
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <ContactPageMessage 
+                            value={message} 
+                            placeholder="Message"
+                            rows="5"
+                            onChange={e => setMessage(e.target.value)}
+                        />            
+                    </div>
+                    <button className="btn" type="submit">Submit</button>
+                </form>
+        )}
+           
+        </ContactPageDivContainer>
+    )
+};
 
 export default Contact;
