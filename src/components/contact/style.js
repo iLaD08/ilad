@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactPageDivContainer = styled.div`
     position: relative;
@@ -27,6 +28,17 @@ export const ContactPageMessage = styled.textarea`
     padding-left: 4px;
     margin: 5px;
     overflow: hidden;
+`;
+
+export const ContactCaptcha = styled(ReCAPTCHA)`
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+`;
+
+export const ContactSpan = styled.span`
+    margin: 10px;
+    color: red;
 `;
 
 export const MessageSentAlert = styled.h1`
