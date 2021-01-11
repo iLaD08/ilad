@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactPageDivContainer, ContactPageInput, ContactPageMessage, ContactCaptcha, ContactSpan, MessageSentAlert } from "./style";
+import { ContactPageDivContainer, ContactTitle, ConctactTitleUnderline, ContactPageInput, ContactPageMessage, ContactCaptcha, ContactSpan, MessageSentAlert } from "./style";
 
 const Contact = () => {
     const [username, setUsername] = React.useState('');
@@ -48,6 +48,8 @@ const Contact = () => {
                 <MessageSentAlert>✅ Message sent</MessageSentAlert>
                 ) : (
                     <form onSubmit={submitRequest} method="POST">
+                    <ContactTitle>Contact</ContactTitle>
+                    <ConctactTitleUnderline></ConctactTitleUnderline>
                     <div>
                         <ContactPageInput 
                             type="username"

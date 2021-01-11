@@ -11,6 +11,22 @@ export const ContactPageDivContainer = styled.div`
     }
 `;
 
+export const ContactTitle = styled.h1`
+    position: relative;
+    top: -50px;
+    text-align: center;
+`;
+
+export const ConctactTitleUnderline = styled.span`
+    position: relative;
+    top: -50px;
+    background-color: #3d3d3d;
+    width: 70px;
+    height: 5px;
+    display: block;
+    margin: 5px auto;
+`; 
+
 export const ContactPageInput = styled.input`
     font-size: 25px;
     border: solid black 1px;
