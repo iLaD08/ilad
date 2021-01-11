@@ -7,7 +7,7 @@ export const SkillsContainer = styled.div`
     margin-right: 4%;
     @media (max-width: 768px) {
         position: relative;
-        top: 250px;
+        top: 300px;
     }
 `;
 
@@ -17,10 +17,12 @@ export const SkillsDiv = styled.div`
     text-align: center;
     @media (max-width: 768px) {
         flex-direction: column;
+        justify-content: space-between;
     }
 `;
 
 export const SkillDiv = styled.div`
+    margin: 10px;
     :hover {
         transform: scale(1.05);
         transition: transform 0.5s;
@@ -42,10 +44,17 @@ export const SkillsUnderline = styled.span`
 export const SkillImg = styled.img`
     width: 250px;
     height: 250px;
+    @media (max-width: 768px) {
+        width: 200px;
+        height: 200px;
+    }
 `;
 
 export const Skilltxt = styled.h3`
     color: #333333;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 `;
 
 

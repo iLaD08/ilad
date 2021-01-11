@@ -21,7 +21,7 @@ const ProjectPage = () => {
     return (
         <ProjectsContainer id="projects">
             <ProjectsTitle>Projects</ProjectsTitle>
-            <ProjectsTitleUnderline></ProjectsTitleUnderline>
+            <ProjectsTitleUnderline/>
             <ProjectsDiv>
                 {data.map((data, index) => (
                     <Project

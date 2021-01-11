@@ -49,7 +49,7 @@ const Contact = () => {
                 ) : (
                     <form onSubmit={submitRequest} method="POST">
                     <ContactTitle>Contact</ContactTitle>
-                    <ConctactTitleUnderline></ConctactTitleUnderline>
+                    <ConctactTitleUnderline/>
                     <div>
                         <ContactPageInput 
                             type="username"
@@ -79,7 +79,7 @@ const Contact = () => {
                             sitekey="6LdR6CYaAAAAAIA-PEqiHM8RqNEndngWJBKG0__u"
                         />
                     <div>
-                        <button className="btn" type="submit">Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
         )}
