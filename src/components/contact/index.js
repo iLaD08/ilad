@@ -5,85 +5,103 @@ const Contact = () => {
     const [username, setUsername] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [message, setMessage] = React.useState('');
-    const [messageSented, setMessageSented] = React.useState(false)
+    const [messageSented, setMessageSented] = React.useState(false);
     const [errorMessage, setErrorMessage] = React.useState('');
+    const [emailValidation, setEmailValidation] = React.useState('');
+    const [Value, setValue] = React.useState('');
 
-    const submitRequest = async (e) => {
-        e.preventDefault();
+    const onChange = (value) => {
+        setValue(value);
+    };
 
-        if(username === "" && email === "" && message === "") {
-            setErrorMessage('The form is empty')
-        }
-         else if(username === "") {
-            setErrorMessage('The username is empty')
-        }
-         else if(email === "") {
-            setErrorMessage('The email is empty')
-        }
-         else if(message === "") {
-            setErrorMessage('The message is empty')
-        }
+    const validateEmail = (email) => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        setEmailValidation(re.test(String(email).toLowerCase()));
+        setEmail(email);
+    }
 
+    const submitRequest = async () => {
+        if (username === "" && email === "" && message === "") {
+            setErrorMessage('The form is empty');
+        }
+        else if (username === "") {
+            setErrorMessage('Username is empty');
+        }
+        else if (email === "") {
+            setErrorMessage('Email is empty');
+        }
+        else if (!emailValidation) {
+            setErrorMessage('Invalid email');
+        }
+        else if (message === "") {
+            setErrorMessage('Message is empty');
+        }
         else {
-            const response = await fetch("https://ilad-backend.glitch.me/smtp/sendmail", { 
-                method: 'POST', 
-                headers: { 
-                    'Content-type': 'application/json'
-                }, 
-                body: JSON.stringify({username, email, message}) 
-            }).then(
-                () => {
-                  setMessageSented(true)
-                  setUsername('')
-                  setEmail('');
-                  setMessage('');
-                }
-            ) 
+            if (Value) {
+                setErrorMessage('');
+                const response = await fetch("https://ilad-backend.glitch.me/smtp/sendmail", {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, email, message })
+                }).then(
+                    () => {
+                        setUsername('');
+                        setEmail('');
+                        setMessage('');
+                        setMessageSented(true);
+                    }
+                )
+            } else {
+                setErrorMessage('Captcha required');
+            }
         }
     };
 
     return (
         <ContactPageDivContainer>
-             {messageSented == true ? (
+            {messageSented == true ? (
                 <MessageSentAlert>✅ Message sent</MessageSentAlert>
-                ) : (
-                    <form onSubmit={submitRequest} method="POST">
-                    <ContactTitle>Contact</ContactTitle>
-                    <ConctactTitleUnderline/>
-                    <div>
-                        <ContactPageInput 
-                            type="username"
-                            placeholder="Username"  
-                            value={username}
-                            onChange={e => setUsername(e.target.value)}
-                        />
-                    </div>
-                    <div>
-                        <ContactPageInput 
-                            type="email"
-                            placeholder="Email"  
-                            value={email}
-                            onChange={e => setEmail(e.target.value)}
-                        />
-                    </div>
-                    <div>
-                        <ContactPageMessage 
-                            value={message} 
-                            placeholder="Message"
-                            rows="5"
-                            onChange={e => setMessage(e.target.value)}
-                        />            
-                    </div>  
-                       <ContactSpan>{errorMessage}</ContactSpan>
-                       <ContactCaptcha
+            ) : (
+                    <>
+                        <ContactTitle>Contact</ContactTitle>
+                        <ConctactTitleUnderline />
+                        <div>
+                            <ContactPageInput
+                                type="username"
+                                placeholder="Username"
+                                value={username}
+                                onChange={e => setUsername(e.target.value)}
+                            />
+                        </div>
+                        <div>
+                            <ContactPageInput
+                                type="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={e => validateEmail(e.target.value)}
+                            />
+                        </div>
+                        <div>
+                            <ContactPageMessage
+                                value={message}
+                                placeholder="Message"
+                                rows="5"
+                                onChange={e => setMessage(e.target.value)}
+                            />
+                        </div>
+                        <ContactSpan>{errorMessage}</ContactSpan>
+                        <ContactCaptcha
                             sitekey="6LdR6CYaAAAAAIA-PEqiHM8RqNEndngWJBKG0__u"
+                            onChange={onChange}
                         />
-                    <div>
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-        )}
-           
+                        <div>
+                            <button onClick={submitRequest}>Submit</button>
+                        </div>
+                    </>
+                )}
+
         </ContactPageDivContainer>
     )
 };
