@@ -1,4 +1,5 @@
 import React from "react";
+import API from "../../api/api";
 import { ContactPageDivContainer, ContactTitle, ConctactTitleUnderline, ContactPageInput, ContactPageMessage, ContactCaptcha, ContactSpan, MessageSentAlert } from "./style";
 
 const Contact = () => {
@@ -21,6 +22,12 @@ const Contact = () => {
     }
 
     const submitRequest = async () => {
+        const contactData = {
+            username: username,
+            email: email,
+            message: message
+        };
+
         if (username === "" && email === "" && message === "") {
             setErrorMessage('The form is empty');
         }
@@ -39,20 +46,13 @@ const Contact = () => {
         else {
             if (Value) {
                 setErrorMessage('');
-                const response = await fetch("https://ilad-backend.glitch.me/smtp/sendmail", {
-                    method: 'POST',
-                    headers: {
-                        'Content-type': 'application/json'
-                    },
-                    body: JSON.stringify({ username, email, message })
-                }).then(
-                    () => {
+                API.post('/smtp/sendmail', contactData)
+                    .then(res => {
                         setUsername('');
                         setEmail('');
                         setMessage('');
                         setMessageSented(true);
-                    }
-                )
+                    })
             } else {
                 setErrorMessage('Captcha required');
             }
