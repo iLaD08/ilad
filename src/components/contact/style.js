@@ -25,7 +25,7 @@ export const ConctactTitleUnderline = styled.span`
     height: 5px;
     display: block;
     margin: 5px auto;
-`; 
+`;
 
 export const ContactPageInput = styled.input`
     font-size: 25px;
@@ -33,6 +33,10 @@ export const ContactPageInput = styled.input`
     outline: none;
     padding-left: 4px;
     margin: 5px;
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
 `;
 
 export const ContactPageMessage = styled.textarea`
@@ -44,6 +48,9 @@ export const ContactPageMessage = styled.textarea`
     padding-left: 4px;
     margin: 5px;
     overflow: hidden;
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 `;
 
 export const ContactCaptcha = styled(ReCAPTCHA)`
