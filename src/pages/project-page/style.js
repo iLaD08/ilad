@@ -9,12 +9,13 @@ export const ProjectsContainer = styled.div`
 
 
 export const ProjectsDiv = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex: 1 1 160px;
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+    margin: 0px auto;
     position: relative;
-    top : 30px;
+    top: 50px;
 `;
 
 export const ProjectsTitle = styled.h1`
