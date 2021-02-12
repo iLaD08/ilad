@@ -27,7 +27,7 @@ const About = () => (
                     </AboutH2>
                 </AboutTextTyperDiv>
                 <AboutP>
-                    A 12 years old mern stack developer, I love <br/> building websites and contribute on open source.
+                    A 12 years old mern stack developer, I love building websites and contribute on open source.
                 </AboutP>
                 <AboutButton onClick={() => window.location.href = '/contact'}>Contact me</AboutButton>
             </AboutContentDiv>
