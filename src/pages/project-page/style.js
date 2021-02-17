@@ -16,6 +16,9 @@ export const ProjectsDiv = styled.div`
     margin: 0px auto;
     position: relative;
     top: 50px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const ProjectsTitle = styled.h1`

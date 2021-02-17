@@ -12,6 +12,9 @@ export const ProjectContainer = styled.div`
         box-shadow: 0px 11px 16px 0px rgba(5, 5, 5, 0.23);
         transform: scale(1.02);
     }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const ProjectContent = styled.div``;
