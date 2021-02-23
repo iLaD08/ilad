@@ -7,6 +7,8 @@ export const AboutContainer = styled.div`
     color: grey;
     font-size: 30px;
     padding: 4%;
+    position: relative;
+    top: 20px;
     @media (max-width: 768px) {
         position: relative;
         top: 170px;
