@@ -1,12 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const onLoadAnimation = keyframes`
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const ProjectsContainer = styled.div`
     position: relative;
     top: 80px;
     margin-left: 4%;
     margin-right: 4%;
+    animation: 1s ease-out 0s 1 ${onLoadAnimation};
 `;
-
 
 export const ProjectsDiv = styled.div`
     width: 85vw;

@@ -1,10 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ReCAPTCHA from "react-google-recaptcha";
+
+const onLoadAnimation = keyframes`
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 export const ContactPageDivContainer = styled.div`
     position: relative;
     top: 150px;
     text-align: center;
+    animation: 1s ease-out 0s 1 ${onLoadAnimation};
     @media (max-width: 768px) {
         position: relative;
         top: 210px;

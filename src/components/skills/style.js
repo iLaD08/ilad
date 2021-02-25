@@ -1,10 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const onLoadAnimation = keyframes`
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const SkillsContainer = styled.div`
     margin-top: 4%;
     margin-left: 4%;
     margin-bottom: 8%;
     margin-right: 4%;
+    animation: 1s ease-out 0s 1 ${onLoadAnimation};
     @media (max-width: 768px) {
         position: relative;
         top: 300px;

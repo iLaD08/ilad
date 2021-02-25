@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const onLoadAnimation = keyframes`
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 export const AboutContainer = styled.div`
     display: flex;
@@ -9,6 +20,7 @@ export const AboutContainer = styled.div`
     padding: 4%;
     position: relative;
     top: 20px;
+    animation: 1s ease-out 0s 1 ${onLoadAnimation};
     @media (max-width: 768px) {
         position: relative;
         top: 170px;
@@ -41,3 +53,4 @@ export const AboutP = styled.p`
 export const AboutButton = styled.button`
     margin-top: 2%;
 `;
+
