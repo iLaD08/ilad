@@ -1,8 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
-const onLoadAnimation = keyframes`
+const ToBottomAnimation = keyframes`
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-15%);
     opacity: 0;
   }
   100% {
@@ -16,7 +16,7 @@ export const SkillsContainer = styled.div`
     margin-left: 4%;
     margin-bottom: 8%;
     margin-right: 4%;
-    animation: 1s ease-out 0s 1 ${onLoadAnimation};
+    animation: 1s ease-out 0s 1 ${ToBottomAnimation};
     @media (max-width: 768px) {
         position: relative;
         top: 300px;
@@ -43,6 +43,7 @@ export const SkillDiv = styled.div`
 
 export const SkillsTitle = styled.h1`
     text-align: center;
+    animation: 1s ease-out 0s 1 ${ToBottomAnimation};
 `;
 
 export const SkillsUnderline = styled.span`
