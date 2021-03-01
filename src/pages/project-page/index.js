@@ -5,7 +5,7 @@ import { ProjectsContainer, ProjectsDiv, ProjectsTitle, ProjectsTitleUnderline }
 const ProjectPage = () => {
     const [data, setData] = React.useState([
         { name: "iLaD", description: "My personal website.", link: "https://github.com/iLaD08/ilad" },
-        { name: "ShareCode", description: "A website that make developers share code with each other.", link: "https://github.com/ShareCode-org" },
+        { name: "ShareCode", description: "An open source website that make developers share code with each other.", link: "https://github.com/ShareCode-org" },
         { name: "Clothing store", description: "A e-commerce website template", link: "https://clothingstore.now.sh/" },
         { name: "FL-Network", description: "A project that i made for my dad", link: "https://github.com/FL-Network" },
         { name: "Protip", description: "A discord bot designed to give helpful advice.", link: "https://github.com/IMAD200" },
