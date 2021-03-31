@@ -6,7 +6,7 @@ export const ProjectContainer = styled.div`
     width: 450px;
     height: 200px;
     cursor: pointer;
-    margin: 2%;
+    margin: 0% 2% 3% 2%;
     padding: 20px;
     &:hover {
         box-shadow: 0px 11px 16px 0px rgba(5, 5, 5, 0.23);
