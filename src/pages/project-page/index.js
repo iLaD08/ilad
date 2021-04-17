@@ -6,9 +6,8 @@ const ProjectPage = () => {
     const [data, setData] = React.useState([
         { name: "iLaD", description: "My personal website.", link: "https://github.com/iLaD08/ilad" },
         { name: "ShareCode", description: "An open source website that make developers share code with each other.", link: "https://github.com/ShareCode-org" },
-        { name: "RandomMeme", description: "A discord bot made to give people memes and make them happy!", link: "https://github.com/RandoMeme"},
+        { name: "MemeShare", description: "An open source social media to share memes!", link: "https://github.com/Meme-Share"},
         { name: "Clothing store", description: "A e-commerce website template", link: "https://clothingstore.now.sh/" },
-        { name: "FL-Network", description: "A project that i made for my dad", link: "https://github.com/FL-Network" },
         { name: "Protip", description: "A discord bot designed to give helpful advice.", link: "https://github.com/IMAD200" },
         { name: "Todo app", description: "Todo App template by iLaD", link: "https://github.com/iLaD08/todo-app" },
         { name: "Random Meme", description: "A web app that generate memes from reddit posts.", link: "https://github.com/iLaD08/random-meme" },

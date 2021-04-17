@@ -41,6 +41,7 @@ export const ConctactTitleUnderline = styled.span`
 
 export const ContactPageInput = styled.input`
     font-size: 25px;
+    width: 20%; 
     border: solid black 1px;
     outline: none;
     padding-left: 4px;
@@ -55,7 +56,7 @@ export const ContactPageMessage = styled.textarea`
     font-size: 25px;
     border: solid black 1px;
     outline: none;
-    width: 316px; 
+    width: 20%; 
     height: 165px;
     padding-left: 4px;
     margin: 5px;
