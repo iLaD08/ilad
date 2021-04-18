@@ -17,6 +17,8 @@ const ProjectPage = () => {
         { name: "D&L mode", description: "A dark and light mode template.", link: "https://github.com/iLaD08/dark-and-light-mode" }
     ]);
 
+    React.useEffect(() => document.title = 'iLaD | Projects', [])
+
     return (
         <ProjectsContainer id="projects">
             <ProjectsTitle>Projects</ProjectsTitle>
