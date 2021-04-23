@@ -84,7 +84,7 @@ export const StyledImg = styled.img`
 	display: none;
 	@media (max-width: 768px) {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 3.5%;
     right: 3.5%;
 		height: 70px;
