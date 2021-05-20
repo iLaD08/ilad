@@ -13,30 +13,30 @@ const onLoadAnimation = keyframes`
 `;
 
 export const ContactPageDivContainer = styled.div`
+  position: relative;
+  top: 150px;
+  text-align: center;
+  animation: 1s ease-out 0s 1 ${onLoadAnimation};
+  @media (max-width: 768px) {
     position: relative;
-    top: 150px;
-    text-align: center;
-    animation: 1s ease-out 0s 1 ${onLoadAnimation};
-    @media (max-width: 768px) {
-        position: relative;
-        top: 210px;
-    }
+    top: 210px;
+  }
 `;
 
 export const ContactTitle = styled.h1`
-    position: relative;
-    top: -50px;
-    text-align: center;
+  position: relative;
+  top: -50px;
+  text-align: center;
 `;
 
 export const ConctactTitleUnderline = styled.span`
-    position: relative;
-    top: -50px;
-    background-color: #3d3d3d;
-    width: 70px;
-    height: 5px;
-    display: block;
-    margin: 5px auto;
+  position: relative;
+  top: -50px;
+  background-color: #3d3d3d;
+  width: 70px;
+  height: 5px;
+  display: block;
+  margin: 5px auto;
 `;
 
 export const ContactPageInput = styled.input`
@@ -53,31 +53,31 @@ export const ContactPageInput = styled.input`
 `;
 
 export const ContactPageMessage = styled.textarea`
-    font-size: 25px;
-    border: solid black 1px;
-    outline: none;
-    width: 20%; 
-    height: 165px;
-    padding-left: 4px;
-    margin: 5px;
-    overflow: hidden;
-    @media (max-width: 768px) {
-        width: 80%;
-    }
+  font-size: 25px;
+  border: solid black 1px;
+  outline: none;
+  width: 20%;
+  height: 165px;
+  padding-left: 4px;
+  margin: 5px;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const ContactCaptcha = styled(ReCAPTCHA)`
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 `;
 
 export const ContactSpan = styled.span`
-    margin: 10px;
-    color: red;
+  margin: 10px;
+  color: red;
 `;
 
 export const MessageSentAlert = styled.h1`
-    position: relative;
-    top: 100px;
+  position: relative;
+  top: 100px;
 `;
