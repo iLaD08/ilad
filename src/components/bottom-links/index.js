@@ -5,7 +5,7 @@ import Github from "../../assests/github.png";
 import { BottomLinksDivContainer, BottomLink, BottomLinkImg } from "./style";
 
 const BottomLinks = () => {
-  const [links, setLinks] = React.useState([
+  const [links] = React.useState([
     { name: "Github", image: `${Github}`, link: "https://github.com/iLaD08" },
     {
       name: "Instagram",

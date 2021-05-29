@@ -65,7 +65,7 @@ const Contact = () => {
 
   return (
     <ContactPageDivContainer>
-      {messageSented == true ? (
+      {messageSented ? (
         <MessageSentAlert>✅ Message sent</MessageSentAlert>
       ) : (
         <>

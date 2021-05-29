@@ -8,7 +8,7 @@ import {
 } from "./style";
 
 const ProjectPage = () => {
-  const [data, setData] = React.useState([
+  const [data] = React.useState([
     {
       name: "iLaD",
       description: "My personal website.",
