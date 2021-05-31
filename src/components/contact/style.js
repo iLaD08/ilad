@@ -40,19 +40,21 @@ export const ConctactTitleUnderline = styled.span`
 `;
 
 export const ContactPageInput = styled.input`
-    font-size: 25px;
-    width: 20%; 
-    border: solid black 1px;
-    outline: none;
-    padding-left: 4px;
-    margin: 5px;
-    @media (max-width: 768px) {
-        width: 80%;
-    }
+  border-radius: 3px;
+  font-size: 25px;
+  width: 20%; 
+  border: solid black 1px;
+  outline: none;
+  padding-left: 4px;
+  margin: 5px;
+  @media (max-width: 768px) {
+      width: 80%;
+  }
 }
 `;
 
 export const ContactPageMessage = styled.textarea`
+  border-radius: 3px;
   font-size: 25px;
   border: solid black 1px;
   outline: none;

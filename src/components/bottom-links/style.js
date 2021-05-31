@@ -15,6 +15,5 @@ export const BottomLink = styled.a`
 export const BottomLinkImg = styled.img`
   width: 50px;
   height: 50px;
-  border: solid 2px #000;
   border-radius: 25px;
 `;
