@@ -35,7 +35,11 @@ const About = () => (
         </AboutButton>
       </AboutContentDiv>
     </AboutDiv>
-    <AboutImg src='https://i.imgur.com/jvYjBZL_d.webp?maxwidth=728&fidelity=grand' />
+    <AboutImg
+      src='https://i.imgur.com/jvYjBZL_d.webp?maxwidth=728&fidelity=grand'
+      alt='REMOVE YOUR CURSOR FORM ME!!!!!!'
+      title='REMOVE YOUR CURSOR FORM ME!!!!!!'
+    />
   </AboutContainer>
 );
 
