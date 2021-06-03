@@ -12,6 +12,14 @@ const Project = ({ name, description, link }) => (
       <ProjectName>{name}</ProjectName>
       <ProjectDescription>{description}</ProjectDescription>
     </ProjectContent>
+    <div className='links'>
+      <a href='https://www.google.com' target='_blank' rel='noreferrer'>
+        Visit
+      </a>
+      <a href='https://www.google.com' target='_blank' rel='noreferrer'>
+        Github
+      </a>
+    </div>
   </ProjectContainer>
 );
 

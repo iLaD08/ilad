@@ -8,10 +8,34 @@ export const ProjectContainer = styled.div`
   cursor: pointer;
   margin: 0% 2% 3% 2%;
   padding: 20px;
+
   &:hover {
     box-shadow: 0px 11px 16px 0px rgba(5, 5, 5, 0.23);
     transform: scale(1.02);
   }
+
+  .links {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-right: 8px;
+    }
+
+    a:first-child {
+      color: red;
+    }
+
+    a:last-child {
+      color: blue;
+    }
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }
