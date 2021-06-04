@@ -27,11 +27,11 @@ export const ProjectContainer = styled.div`
       margin-right: 8px;
     }
 
-    a:first-child {
+    .link {
       color: red;
     }
 
-    a:last-child {
+    .github {
       color: blue;
     }
   }

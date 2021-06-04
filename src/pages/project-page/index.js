@@ -12,58 +12,84 @@ const ProjectPage = () => {
     {
       name: "iLaD",
       description: "My personal website.",
-      link: "https://github.com/iLaD08/ilad",
+      links: {
+        link: "http://ilad.now.sh/",
+        github: "https://github.com/iLaD08/ilad",
+      },
     },
     {
       name: "ShareCode",
       description:
         "An open source website that make developers share code with each other.",
-      link: "https://github.com/ShareCode-org",
+      links: {
+        link: "http://share-code.vercel.app/",
+        github: "https://github.com/ShareCode-org",
+      },
     },
     {
       name: "MemeShare",
       description: "An open source social media to share memes!",
-      link: "https://github.com/Meme-Share",
+      links: {
+        link: "https://meme-share.netlify.app/",
+        github: "https://github.com/MemeShare-org/",
+      },
     },
     {
       name: "Clothing store",
       description: "A e-commerce website template",
-      link: "https://clothingstore.now.sh/",
+      links: {
+        link: "https://clothingstore.now.sh/",
+        github: "",
+      },
     },
     {
       name: "Protip",
       description: "A discord bot designed to give helpful advice.",
       link: "https://github.com/IMAD200",
+      links: {
+        link: "http://protip.now.sh/",
+        github: "https://github.com/IMAD200",
+      },
     },
     {
       name: "Todo app",
       description: "Todo App template by iLaD",
-      link: "https://github.com/iLaD08/todo-app",
-    },
-    {
-      name: "Random Meme",
-      description: "A web app that generate memes from reddit posts.",
-      link: "https://github.com/iLaD08/random-meme",
+      links: {
+        link: "https://ilad08.github.io/todo-app/",
+        github: "https://github.com/iLaD08/todo-app",
+      },
     },
     {
       name: "B3bola chat",
       description: "A simple real-time-chat app",
-      link: "https://b3bola-chat.herokuapp.com/",
+      links: {
+        link: "https://b3bola-chat.herokuapp.com/",
+        github: "https://github.com/iLaD08/b3bola-chat",
+      },
     },
     {
       name: "Monster Rolodex",
       description: "My first React app",
-      link: "https://monsters-rolodex.ilad08.now.sh/",
+      links: {
+        link: "https://monsters-rolodex.ilad08.now.sh/",
+        github: "",
+      },
     },
     {
       name: "Radio bot",
       description: "A Discord radio bot template.",
-      link: "https://github.com/iLaD08/discord-radio-bot",
+      links: {
+        link: "",
+        github: "https://github.com/iLaD08/discord-radio-bot",
+      },
     },
     {
       name: "D&L mode",
       description: "A dark and light mode template.",
-      link: "https://github.com/iLaD08/dark-and-light-mode",
+      links: {
+        link: "https://dark-and-light-mode.vercel.app/",
+        github: "https://github.com/iLaD08/dark-and-light-mode",
+      },
     },
   ]);
 
@@ -79,7 +105,7 @@ const ProjectPage = () => {
             key={index}
             name={data.name}
             description={data.description}
-            link={data.link}
+            links={data.links}
           />
         ))}
       </ProjectsDiv>
