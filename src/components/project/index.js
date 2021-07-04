@@ -1,4 +1,6 @@
 import React from "react";
+import LinkIcon from "@material-ui/icons/Link";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import {
   ProjectContainer,
   ProjectContent,
@@ -15,6 +17,7 @@ const Project = ({ name, description, links }) => (
     <div className='links'>
       {links.link ? (
         <a className='link' href={links.link} target='_blank' rel='noreferrer'>
+          <LinkIcon />
           Visit
         </a>
       ) : (
@@ -27,6 +30,7 @@ const Project = ({ name, description, links }) => (
           href={links.github}
           target='_blank'
           rel='noreferrer'>
+          <GitHubIcon />
           Github
         </a>
       ) : (

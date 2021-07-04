@@ -25,6 +25,16 @@ export const ProjectContainer = styled.div`
       align-items: center;
       text-decoration: none;
       margin-right: 8px;
+
+      svg {
+        margin-right: 2px;
+      }
+    }
+
+    a:first-child {
+      svg {
+        transform: rotate(120deg);
+      }
     }
 
     .link {
