@@ -14,13 +14,11 @@ const onLoadAnimation = keyframes`
 export const ProjectsContainer = styled.div`
   position: relative;
   top: 80px;
-  margin-left: 4%;
-  margin-right: 4%;
   animation: 1s ease-out 0s 1 ${onLoadAnimation};
 `;
 
 export const ProjectsDiv = styled.div`
-  width: 85vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
