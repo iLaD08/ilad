@@ -38,7 +38,7 @@ const About = () => (
     <AboutImg
       src='https://i.imgur.com/jvYjBZL_d.webp?maxwidth=728&fidelity=grand'
       alt='REMOVE YOUR CURSOR FORM ME!!!!!!'
-      title='REMOVE YOUR CURSOR FORM ME!!!!!!'
+      title='REMOVE YOUR CURSOR FROM ME!!!!!!'
     />
   </AboutContainer>
 );

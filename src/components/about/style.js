@@ -61,6 +61,7 @@ export const AboutH2 = styled.h2`
 
 export const AboutP = styled.p`
   margin-top: 2%;
+  max-width: 85%;
 `;
 
 export const AboutButton = styled.button`
