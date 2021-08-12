@@ -19,7 +19,7 @@ const About = () => (
           <AboutH2>
             <Typewriter
               options={{
-                strings: ["I am ImadEddine Lakhdar"],
+                strings: ["I am iLaD"],
                 autoStart: true,
                 loop: true,
               }}
@@ -27,8 +27,7 @@ const About = () => (
           </AboutH2>
         </AboutTextTyperDiv>
         <AboutP>
-          A 13 years old mern stack developer, I love building websites and
-          contribute to open source.
+          A mern stack developer that love building websites and contribute to open source.
         </AboutP>
         <AboutButton onClick={() => (window.location.href = "/contact")}>
           Contact me
