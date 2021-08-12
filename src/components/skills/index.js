@@ -20,7 +20,7 @@ const Skills = () => (
           alt="I don't have a beard LOL!"
           title="I don't have a beard LOL!"
         />
-        <Skilltxt>Front-end Developer</Skilltxt>
+        <Skilltxt>Mern stack Developer</Skilltxt>
       </SkillDiv>
       <SkillDiv>
         <SkillImg
