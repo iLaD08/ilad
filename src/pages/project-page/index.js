@@ -27,11 +27,19 @@ const ProjectPage = () => {
       },
     },
     {
-      name: "MemeShare",
+      name: "Memeshare",
       description: "An open source social media to share memes!",
       links: {
         link: "https://meme-share.netlify.app/",
         github: "https://github.com/MemeShare-org/",
+      },
+    },
+    {
+      name: "react-weather-app",
+      description: "A simple react app that shows you some weather info.",
+      links: {
+        link: "react-weather-app-demo.vercel.app/",
+        github: "https://github.com/iLaD08/react-weather-app",
       },
     },
     {
@@ -52,7 +60,7 @@ const ProjectPage = () => {
       },
     },
     {
-      name: "Todo app",
+      name: "todo-app",
       description: "Todo App template by iLaD",
       links: {
         link: "https://ilad08.github.io/todo-app/",
@@ -60,7 +68,7 @@ const ProjectPage = () => {
       },
     },
     {
-      name: "B3bola chat",
+      name: "b3bola-chat",
       description: "A simple real-time-chat app",
       links: {
         link: "https://b3bola-chat.herokuapp.com/",
@@ -76,7 +84,7 @@ const ProjectPage = () => {
       },
     },
     {
-      name: "Radio bot",
+      name: "discord-radio-bot",
       description: "A Discord radio bot template.",
       links: {
         link: "",
@@ -84,7 +92,7 @@ const ProjectPage = () => {
       },
     },
     {
-      name: "D&L mode",
+      name: "dark-and-light-mode",
       description: "A dark and light mode template.",
       links: {
         link: "https://dark-and-light-mode.vercel.app/",
@@ -96,7 +104,7 @@ const ProjectPage = () => {
   React.useEffect(() => (document.title = "iLaD | Projects"), []);
 
   return (
-    <ProjectsContainer id='projects'>
+    <ProjectsContainer id="projects">
       <ProjectsTitle>Projects</ProjectsTitle>
       <ProjectsTitleUnderline />
       <ProjectsDiv>

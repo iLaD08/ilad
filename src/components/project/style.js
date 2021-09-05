@@ -32,7 +32,7 @@ export const ProjectContainer = styled.div`
     }
 
     a:first-child {
-      svg {
+      .link-svg {
         transform: rotate(120deg);
       }
     }

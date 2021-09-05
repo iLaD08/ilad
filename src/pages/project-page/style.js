@@ -12,19 +12,16 @@ const onLoadAnimation = keyframes`
 `;
 
 export const ProjectsContainer = styled.div`
-  position: relative;
-  top: 80px;
+  margin-top: 40px;
   animation: 1s ease-out 0s 1 ${onLoadAnimation};
 `;
 
 export const ProjectsDiv = styled.div`
-  width: 90vw;
+  width: 85vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin: 0px auto;
-  position: relative;
-  top: 50px;
+  margin: 50px auto;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }

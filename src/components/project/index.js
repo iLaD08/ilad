@@ -14,10 +14,10 @@ const Project = ({ name, description, links }) => (
       <ProjectName>{name}</ProjectName>
       <ProjectDescription>{description}</ProjectDescription>
     </ProjectContent>
-    <div className='links'>
+    <div className="links">
       {links.link ? (
-        <a className='link' href={links.link} target='_blank' rel='noreferrer'>
-          <LinkIcon />
+        <a className="link" href={links.link} target="_blank" rel="noreferrer">
+          <LinkIcon className="link-svg" />
           Visit
         </a>
       ) : (
@@ -26,10 +26,11 @@ const Project = ({ name, description, links }) => (
 
       {links.github ? (
         <a
-          className='github'
+          className="github"
           href={links.github}
-          target='_blank'
-          rel='noreferrer'>
+          target="_blank"
+          rel="noreferrer"
+        >
           <GitHubIcon />
           Github
         </a>
