@@ -35,6 +35,22 @@ const ProjectPage = () => {
       },
     },
     {
+      name: "crypto-ranking",
+      description:
+        "A crypto ranking website made using reactjs. (like coinmarketcap)",
+      links: {
+        link: "crypto-ranking.vercel.app",
+        github: "https://github.com/iLaD08/crypto-ranking",
+      },
+    },
+    {
+      name: "text-to-speech",
+      description: "A basic text-to-speech web app.",
+      links: {
+        github: "https://github.com/iLaD08/text-to-speech",
+      },
+    },
+    {
       name: "react-weather-app",
       description: "A simple react app that shows you some weather info.",
       links: {
