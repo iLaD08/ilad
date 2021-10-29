@@ -35,12 +35,43 @@ const ProjectPage = () => {
       },
     },
     {
+      name: "RSOUND",
+      description: "A music service landing page template.",
+      links: {
+        github: "https://github.com/iLaD08/rsound",
+      },
+    },
+    {
+      name: "Protip",
+      description: "A discord bot designed to give helpful advice.",
+      link: "https://github.com/IMAD200",
+      links: {
+        link: "http://protip.now.sh/",
+        github: "https://github.com/IMAD200",
+      },
+    },
+    {
+      name: "Clothing store",
+      description: "A e-commerce website template",
+      links: {
+        link: "https://clothingstore.now.sh/",
+        github: "",
+      },
+    },
+    {
       name: "crypto-ranking",
       description:
         "A crypto ranking website made using reactjs. (like coinmarketcap)",
       links: {
         link: "crypto-ranking.vercel.app",
         github: "https://github.com/iLaD08/crypto-ranking",
+      },
+    },
+    {
+      name: "random-meme",
+      description: "A site that randomly generates memes.",
+      links: {
+        link: "https://randomeme.vercel.app/",
       },
     },
     {
@@ -56,23 +87,6 @@ const ProjectPage = () => {
       links: {
         link: "react-weather-app-demo.vercel.app/",
         github: "https://github.com/iLaD08/react-weather-app",
-      },
-    },
-    {
-      name: "Clothing store",
-      description: "A e-commerce website template",
-      links: {
-        link: "https://clothingstore.now.sh/",
-        github: "",
-      },
-    },
-    {
-      name: "Protip",
-      description: "A discord bot designed to give helpful advice.",
-      link: "https://github.com/IMAD200",
-      links: {
-        link: "http://protip.now.sh/",
-        github: "https://github.com/IMAD200",
       },
     },
     {
